@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+
 *{
     font-family: sans-serif;
     width: 100%;
@@ -27,6 +29,18 @@ h1 {
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
     color: #FFF;
+}
+
+p, span{
+    color: #fff;
+    font-family: 'Share Tech', sans-serif ;
+    font-size: 1.5rem;
+    margin-top: 18px; 
+    line-height: 1.6rem;
+}
+
+strong{
+    color: #3EB72B;
 }
 
 .container-input{
@@ -106,6 +120,7 @@ h1 {
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s ease-in-out;
+    margin-bottom: 18px;
 }
 
 .hide{

@@ -1,10 +1,10 @@
 let slideElement = document.getElementById("slider");
 let buttonElement = document.getElementById("button");
-let sizePassword = document.getElementById("valor");
+let sizePassword = document.getElementById("value");
 let password = document.getElementById("password");
 let containerPassword = document.getElementById("container-password");
 let charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&";
-let novaSenha = "";
+let newPass = "";
 
 sizePassword.innerHTML = slideElement.value; 
 
@@ -18,13 +18,13 @@ function generatePassword() {
         pass += charset.charAt(Math.floor(Math.random() * n)); 
         }
 
-      containerPassword.classList.remove("hide");  
-      password.innerHTML = pass;
-      novaSenha = pass;
+        containerPassword.classList.remove("hide");  
+        password.innerHTML = pass;
+        newPass = pass;
 }
 
 function copyPassaword() {
-    navigator.clipboard.writeText(novaSenha).then(() => {
-        alert("Senha copiada com sucesso!");
+    navigator.clipboard.writeText(newPass).then(() => {
+        alert("See?! You didn't have to think \nPassword copied!");
     });
 }
