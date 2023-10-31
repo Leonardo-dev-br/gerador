@@ -6,23 +6,27 @@
     <meta name="keywords" content="gerador de senha, senhas, gerador, password">
 
     <link rel="stylesheet" href="style.css">
-    <title>Gerdador de Senha</title>
+    <title>generate password</title>
 </head>
 <body>
     <div class="container">
-        <h1>Gerador de Senha</h1>
+        <h1>generate your password</h1>
         <main class="container-input">
-            <span>Tamanho: <span id="valor"></span> caracteres</span>
+            <span>Size of characters: <span id="value"></span> characters</span>
             <input id="slider" class="slider" type="range" min="8" max="25" value="14" />
 
-            <button id="button" class="button-cta" onclick="generatePassword()">Gerar Senha</button>
+            <button id="button" class="button-cta" onclick="generatePassword()">Generate Password</button>
+            <section>
+                <div id="container-password" onclick="copyPassaword()" class="container-password hide">
+                    <span class="title">here is your password:</span>
+                    <span id="password" class="password"></span>
+                    <span class="tooltip">Click on the text to copy. ☝</span>
+                </div>
+            </section>
+            <section>
+                <p>Safeguard your digital life with a touch of genius! 🛡️ Ever wondered why embracing a <strong>password generator</strong> is so "cool"? Say goodbye to the hassle of creating a strong and secure password. With our tool, generate ultra-secure passwords in seconds! Ensure your privacy remains intact. One click, loads of security. Try it now! 💻🚀 #SecurityIsEverything #GenerateWithConfidence</p>
+            </section>
         </main>
-
-        <div id="container-password" onclick="copyPassaword()" class="container-password hide">
-            <span class="title">Sua senha gerada foi:</span>
-            <span id="password" class="password"></span>
-            <span class="tooltip">Clique na senha para copiar. ☝</span>
-        </div>
     </div>
 
 
